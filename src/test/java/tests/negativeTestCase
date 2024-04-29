@@ -1,0 +1,81 @@
+Given saucedemo.com
+When user inputs invalid login and invalidpassword
+And clicks login button
+And verify error sees message sees
+
+
+
+
+Given saucedemo.com
+When user logs in with problem_user username and valid password
+Then user clicks on login button
+Description:
+When attempting to add more than three products to the cart in the shopping application, the system does not allow adding additional products. Additionally, the "Remove" button to delete products from the cart is non-functional.
+
+Priority:
+High
+
+Severity:
+Major
+
+Steps to Reproduce:
+
+Log in to the shopping application.
+Navigate to the product catalog.
+Add three products to the cart.
+Attempt to add a fourth product to the cart.
+Expected Result:
+The system should allow adding multiple products to the cart, and the "Remove" button should function correctly to remove products from the cart.
+
+Actual Result:
+The system prevents adding more than three products to the cart, and the "Remove" button does not remove products as expected.
+
+Environment:
+
+Operating System: Windows 10
+Browser: Google Chrome 99.0
+Device: Desktop
+Application Version: 2.1.0
+Attachments:
+
+Screenshots demonstrating the issue
+Browser console logs, if applicable
+Additional Notes:
+
+This issue impacts the user experience and limits the functionality of the shopping application.
+Immediate attention is required to resolve the limitation on adding products and fix the non-functional "Remove" button to ensure smooth shopping experience for users.
+
+
+
+
+
+
+Given saucedemo.com
+When user logs in with problem_user username and valid password
+Then user clicks on login button
+And user clicks on add product to cart
+Verify product was added to the cart
+Then user clicks on cart button
+Verify user was redirected to cart page
+And user clicks on remove button
+Verify that product were removed
+
+
+
+Given product page saucedemo.com
+When user clicks on add product
+Then user clicks on cart page
+And user clicks on continue button
+And user fills all information
+
+
+Descripion: When users navigates to Checkout information page user not able to fill last name section.
+
+Steps to reproduce:
+
+1)Add item to the cart
+2)Navigate to checkout information page
+3)Attempt to fill last name section
+
+
+

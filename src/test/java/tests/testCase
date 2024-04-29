@@ -1,0 +1,15 @@
+Given saucedemo.com
+When user logs in with valid credentials
+Then user clicks on login button
+Then user navigates to product page
+Then user is able to add product
+Then verify user is able to see remove button
+Then verify user can see cart icon appears 1
+Then user navigates to cart page
+Then user is able to see checkout button
+Then user navigates to checkout page
+Then user verifies that he is on checkout page
+Then user fills all information
+Then user navigates to overview page
+Then user clicks on finish button
+Then verify that order was placed

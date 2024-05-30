@@ -7,7 +7,7 @@ import io.restassured.response.Response;
 
 public class CashWiseAuthorization {
     public static String getToken(){
-        String url = Config.getProperty("cashWiseApiUrl") + "api/myaccount/auth/login";
+        String url = Config.getProperty("cashWiseApiUrl") + "/api/myaccount/auth/login";
 
         RequestBody requestBody = new RequestBody();
         requestBody.setEmail("emir_77777@mail.ru");
